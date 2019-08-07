@@ -1,0 +1,68 @@
+#homelogo
+{
+	width: 70px;
+	height:70px;
+	padding-left:0px;
+	
+	
+}
+.btn
+{
+	 margin-left: auto;
+  margin-right: auto;
+}
+.navbar-brand
+{
+	
+	color:red;
+	font-weight: 150 20px;
+}
+.navbarResp
+{
+	padding-right: 0px;
+	
+}
+#imgglance
+{
+	 border-radius: 15px 50px;
+ box-shadow: 10px 10px 3px grey;
+  padding: 5px; 
+	height: 200px;
+	width: 260px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.card
+  {
+	box-shadow: 10px 10px 5px grey;  
+	  
+  }
+  .card-title
+  {
+	  text-align: center;
+	  color:red;
+	  font-size: 25px;
+	  font-weight: normal;
+  }
+  .customdiv
+  {               
+	  margin:3px;
+	  min-height:900px;
+	  background-color: silver;
+	  text-align: center;
+	  font-size:large;
+	  
+	  
+	  
+  }
+  #memberpanel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+  
+  
+  

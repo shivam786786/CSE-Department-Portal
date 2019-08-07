@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel='icon' href='images/logo.jpg'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+    <title>Faculty Panel</title>
+</head>
+
+
+<body>
+
+        <div class="container-fluid padding">
+                <div class="row text-center text-light jumbotron bg-dark">
+                    <div class="col-12">
+                        <h1 class="">UNIVERSITY INSTITUE OF TECHNOLOGY, RGPV</h1>
+                        <p  class="lead text-center" >Narshingarh Bypass Road Near Gandhi Nagar,Bhopal(M.P.)</p>
+                    </div>
+                </div>
+            <nav class ="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+                    <a class = "navbar-brand"><img src="images/logo.jpg" style="width: 60px; height: 60px"><strong class="text-wrap" style="width: 6rem">Department of Computer Science & Engineering</strong></a>
+                    <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#navbarResp">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id = "navbarResp">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-primary mr-2 d-inline" href="Homepage.html" role="button">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-warning mr-2 d-inline dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
+                                <div class="dropdown-menu">
+                                    <a href="Glance.html" class="dropdown-item"><strong>At glance</strong></a>
+                                    <a href="developers.html" class="dropdown-item"><strong>About Developers</strong></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-danger mr-2 d-inline dropdown-toggle" href="#" role="button" data-toggle="dropdown">Community</a>
+                                <div class="dropdown-menu">
+                                        <a href="http://uitrgpv.ac.in/Index.aspx" class="dropdown-item"><strong>UIT-RGPV</strong></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-info mr-2 d-inline dropdown-toggle" data-toggle="dropdown" href="#" role="button">Time Table</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-1</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-2</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-3</strong></a>                       
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-4</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-5</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-6</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-7</strong></a>
+                                    <a href="#" class="dropdown-item"><strong>SEMESTER-8</strong></a>
+    
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark mr-2  d-inline dropdown-toggle" data-toggle="dropdown" href="#" role="button">Syllabus & Scheme</a>
+                                <div class="dropdown-menu">
+                                   <a href="scheme.jsp" class="dropdown-item">Schemes</a>
+                                <a href="syllabus.jsp" class="dropdown-item">Syllabus</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-success d-inline" href="Contact Us.html" role="button">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <div class="container-fluid padding">
+               <div class="row text-center">
+                   <div class="col-12">
+                   
+                   <div class="jumbotron bg-secondary ml-auto mr-auto rounded-pill text-light text-monospace">
+                       
+					<p class="lead display-4 text-monospace text-white-50">Faculty Panel</p>
+						
+				   </div>
+					 <div class="row jumbotron bg-light ml-auto mr-auto text-nowrap ">
+					 <div class="col-sm-12 col-md-4 lead text-left display-6 text-danger" >Last Logged In:  </div>
+					  <div class="col-sm-12 col-md-4 lead text-center display-6 text-success">Welcome UserName </div>
+					   <div class="col-sm-12 col-md-4 lead text-right display-6 text-danger" >Logout</div>
+                     
+				  </div>
+			  </div>
+            </div>
+            <nav class="nav nav-tabs flex-column flex-sm-row nav-fill"id="nav-tab" role="tablist">
+                
+                    <a class="nav-item nav-link active student" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Profile</a>
+                    <a class="nav-item nav-link student" id="nav-file-tab" data-toggle="tab" href="#nav-file" role="tab" aria-controls="nav-file" aria-selected="false">File Upload</a>
+                    <a class="nav-item nav-link student" id="nav-marks-tab" data-toggle="tab" href="#nav-marks" role="tab" aria-controls="nav-marks" aria-selected="false">Marks Upload</a>
+                    <a class="nav-item nav-link student" id="nav-result-tab" data-toggle="tab" href="#nav-result" role="tab" aria-controls="nav-result" aria-selected="true">Result</a>
+                    <a class="nav-item nav-link student" id="nav-query-tab" data-toggle="tab" href="#nav-query" role="tab" aria-controls="nav-query" aria-selected="false">Query Reply</a>
+                   <a class="nav-item nav-link student" id="nav-query-tab" data-toggle="tab" href="#nav-change_password" role="tab" aria-controls="nav-change_password" aria-selected="false">Change Password</a>
+            </nav>
+            <div class="tab-content nav-fills" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="container padding">
+                        <div class="row">
+                            <div class="col-md-6 mt-5">
+                                <figure class="figure">
+                                    <img src="images/wall5.jpg" class="figure-img img-fluid rounded-circle mt-5" alt="Profile Photo">
+                                    <figcaption class="figure-caption text-center"><h3>Profile Photo</h3></figcaption>
+                                  </figure>
+                            </div>
+                            <div class="col-md-6  mt-5">
+                                <br>
+                                <blockquote>
+                                    <h5>Dragon Warrior</h5>
+                                    <small><cite title="Source Title">Protector of the Gongman City </cite></small>
+                                </blockquote>
+                                <hr class="bg-dark">
+                               <p>dragonwarrior163@gmail.com</p>
+                                <hr class="bg-dark">
+                                <p>0101CS131022</p><hr class="bg-dark">
+                                <p>June 18, 1990
+                                </p><hr class="bg-dark">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditProfileModal">Edit Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-file" role="tabpanel" aria-labelledby="nav-file-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo aspernatur, modi ipsum labore vel.</div>
+                    <div class="tab-pane fade" id="nav-marks" role="tabpanel" aria-labelledby="nav-marks-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eaque consequuntur fuga neque provident. Neque repudiandae sunt id nam alias!</div>
+                    <div class="tab-pane fade" id="nav-result" role="tabpanel" aria-labelledby="nav-result-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque eaque quisquam quas officia. Labore blanditiis dolorem qui animi cupiditate minus voluptatum alias cumque suscipit.</div>
+                    <div class="tab-pane fade" id="nav-query" role="tabpanel" aria-labelledby="nav-query-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore tenetur facilis ipsam et magnam hic exercitationem dolor fugit placeat perspiciatis.</div>
+                    <div class="tab-pane fade" id="nav-change_password" role="tabpanel" aria-labelledby="nav-change_password-tab">
+                        
+                        <div class="container">
+			<div class="col-md-6 col-xm-12 col-sm-8 border border-dark" style="margin-left:auto; margin-right:auto; margin-top:40px; padding-top:20px; padding-bottom:10px;" >
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="text-center">
+                  <h3><i class="fas fa-id-card-alt fa-3x"></i></h3><br>
+                  <h2 class="text-center"><mark>&nbsp;Change Password&nbsp;</mark></h2>
+                  <p>You can reset your password here.</p>
+                  <div class="panel-body text-left">
+    
+                    <form id="forgotpwd-form" role="form" method="post">
+						<label><code><h5>Current Password:</h5></code></label>
+						<div class="form-group pass_show"> 
+							<input type="password" class="form-control" placeholder="Current Password" value="dragonwarrior1639090"> 
+							</div>
+						<label><code><h5>New Password:</h5></code></label>
+							<div class="form-group pass_show"> 
+							<input type="password" class="form-control" placeholder="New Password" value="dragonwarrior9090"> 
+							</div> 
+						<label><code><h5>Confirm Password:</h5></code></label>
+							<div class="form-group pass_show"> 
+							<input type="password" class="form-control" placeholder="Confirm Password" value="dragonwarrior9090"> 
+							</div> 
+                      <div class="form-group">
+                        <input type="button" class="btn btn-lg btn-success btn-block" data-toggle="modal" data-target="#changePasswordSuccessModal" value="Save Changes">
+                      </div>
+						
+</form>
+    
+                  </div>
+                </div>
+              </div>
+            </div></div>
+                    </div>
+				</div>
+                
+            </div>
+            </div>
+ <!-- Edit Profile Section-->
+			
+		<div class="modal fade" id="EditProfileModal">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+
+      <!-- Modal Header -->
+					<div class="modal-header bg-light">
+						<img id="homelogo" style="height:44px; " src="images/avatar1.jpg">
+							<div class="text-center text-info lead"> <h4 class="modal-title">&nbsp;&nbsp;Edit Profile</h4></div>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+      <!-- Modal body -->
+					<div class="modal-body ">
+<div class="row">
+      <!-- left column -->
+	  <br>
+      <div class="col-md-4">
+        <div class="text-center">
+		<br>
+		<h3>Edit Profile Panel</h3>
+<br>
+	<div class="rounded-circle" id="editprofile" style=" height:200; width:200; margin-right:auto; margin-left:auto;" alt="Unable to show image">
+	 <img src="images/pp.png" id="browsedimg"  class="img-fluid "  style="width:100%; height: 100%" alt="avatar">
+	</div>	
+	<br>
+	   <h6>Profile Photo</h6>
+          
+          <input type="file" id="profileupload" class="form-control">
+		<script>
+		
+		$("#profileupload").change(function(e) {
+		if(typeof browsedimg =='defined');
+		 $("#browsedimg").remove();
+    for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
+        
+        var file = e.originalEvent.srcElement.files[i];
+       
+        var img = document.createElement("img");
+        var reader = new FileReader();
+        reader.onloadend = function() {
+             img.src = reader.result;
+			 img.height= 200;
+			img.width=200;
+			img.id="browsedimg";
+			
+        }
+        reader.readAsDataURL(file);
+        $("#editprofile").append(img);
+		
+    }
+});</script>
+
+	   </div>
+	   
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-8 personal-info">
+       
+        <form class="form-horizontal" role="form">
+		<br>
+          <div class="form-group">
+            <label class="col-lg-3 control-label"><strong>Name :</strong></label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Rohit Rai">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label"><strong>Roll No :</strong></label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="0101CS161093">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label"><strong>Semester :</strong></label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="6">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label"><strong>Email :</strong></label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="dragonwarrior1639090@gmail.com">
+            </div>
+          </div>
+         
+          <div class="form-group">
+            <label class="col-md-3 control-label"><strong>Mob No. :</strong></label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="982627620">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"><strong>Address :</strong></label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="1110, Gree City , Jabalpur">
+            </div>
+          </div>
+         
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="button" class="btn btn-primary" value="Save Changes">
+              <span></span>
+             <input type="button" class="btn btn-primary" data-dismiss="modal" value="Cancel"></button>
+		
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+
+  
+				
+
+ </div>
+ 	<br>
+	</div>
+     <!-- Modal footer 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+-->
+    </div>
+  </div>
+
+			
+			
+			<!-- end of Edit Profile Section-->
+            <footer>
+                    <div class="jumbotron bg-dark text-light text-center mt-4">
+                        <h3><strong>&copy; COPY-RIGHT, UIT-RGPV</strong></h3>
+                        <hr class="dark w-50 bg-light">
+                        <p class="lead text-muted">ALL RIGHTS ARE RESERVED</p>
+                        <div class="col-12 text-center social-icon padding">
+                         <p class="text-muted">Connect with us:   <a href="#" class="fab fa-facebook" ></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                        </p> 
+                        </div>
+                    </div>
+            </footer>
+    
+               
+            
+        </div>
+    
+	
+	
+	
+	
+	
+
+</body>
+
+</html>
+
+
+

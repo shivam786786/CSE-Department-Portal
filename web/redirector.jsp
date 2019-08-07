@@ -1,0 +1,1 @@
+</script><script>window.href.location="errorPage"</script>

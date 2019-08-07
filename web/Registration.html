@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel='icon' href='images/logo.jpg'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery3.3.1.js" type="text/javascript"></script>
+        <script src="js/jquery.js" type="text/javascript"></script>
+
+    
+    <!--<script type="text/javascript" src="js/validate.js"></script>-->
+    <title>CSE Department Portal of UIT, RGPV</title>
+</head>
+<body>
+    <div class="container-fluid padding">
+            <div class="row text-center text-light jumbotron bg-dark">
+                <div class="col-12">
+                    <h1 class="">UNIVERSITY INSTITUE OF TECHNOLOGY, RGPV</h1>
+                    <p  class="lead text-center" >Narshingarh Bypass Road Near Gandhi Nagar,Bhopal(M.P.)</p>
+                </div>
+            </div>
+        <nav class ="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class = "navbar-brand"><img src="images/logo.jpg" style="width: 60px; height: 60px"><strong class="text-wrap" style="width: 6rem">Department of Computer Science & Engineering</strong></a>
+                <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#navbarResp">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id = "navbarResp">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-primary mr-2 d-inline" href="Homepage.html" role="button">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-warning mr-2 d-inline dropdown-toggle" href="#" role="button" data-toggle="dropdown">About</a>
+                            <div class="dropdown-menu">
+                                <a href="Glance.html" class="dropdown-item">At A Glance</a>
+                                <a href="developers.html" class="dropdown-item">Developers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-danger mr-2 d-inline dropdown-toggle" href="#" role="button" data-toggle="dropdown">Community</a>
+                            <div class="dropdown-menu">
+                                    <a href="http://uitrgpv.ac.in/Index.aspx" class="dropdown-item">UIT_RGPV</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-info mr-2 d-inline dropdown-toggle" data-toggle="dropdown" href="#" role="button">Time Table</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">SEMESTER-1</a>
+                                <a href="#" class="dropdown-item">SEMESTER-2</a>
+                                <a href="#" class="dropdown-item">SEMESTER-3</a>                       
+                                <a href="#" class="dropdown-item">SEMESTER-4</a>
+                                <a href="#" class="dropdown-item">SEMESTER-5</a>
+                                <a href="#" class="dropdown-item">SEMESTER-6</a>
+                                <a href="#" class="dropdown-item">SEMESTER-7</a>
+                                <a href="#" class="dropdown-item">SEMESTER-8</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark mr-2  d-inline dropdown-toggle" data-toggle="dropdown" href="#" role="button">Syllabus & Scheme</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Syllabus</a>
+                                <a href="#" class="dropdown-item">Schemes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success d-inline text-wrap" href="Contact Us.html" role="button">Contact Us</a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link text-danger d-inline text-wrap" href="Registration.html" role="button">New User?</a>
+                        </li>
+					</ul>
+                </div>
+            </div>
+        </nav>
+	<hr>
+					<div class="jumbotron bg-secondary ml-auto mr-auto text-light">
+                       
+						<p class="lead display-4 text-center text-white text-wrap" >Registration Panel</p>
+						
+				   </div>
+
+	<div class="card">
+<kbd>Registration Prerequisite & Important Instructions:</kbd>
+			<div class="card-body">
+				<ul>
+	<li><mark>Must be a Member of Department Of Computer Science And Engineering , UIT RGPV, Bhopal</mark></li>
+				</ul>
+				<h5 class="card-title text-danger text-left">For Faculty Members :</h5>
+				<ul>
+				<li>Use Your E-Mail Address as your UserName.</li>
+				</ul>
+				<h5 class="card-title text-danger text-left">For Students :</h5>
+				<ul>
+				<li>Use Your Enrollment No. as your UserName.</li>
+				</ul>
+			</div>
+	</div>
+	<hr>
+	<div class="card">
+		<kbd>Complete the details :</kbd>
+			<div class="card-body">
+				
+				<form class="form-inline" action="">
+                                    <div class="form-group mr-auto ml-auto mb-auto mt-auto">
+                                    <label for="username" class="mr-sm-2 text-danger">Username :</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2" id="username1" required>
+                                    <button type="button" class="btn btn-success mb-2  tooltip-test" id="submit">Verify</button>
+                                    <span id="result"></span>
+                                    </div>
+				</form>
+				
+
+			
+			</div>
+	</div>
+
+	<br>
+		<!-- otp modal-->
+	
+
+<!-- Modal -->
+<div id="otpModal" class="modal fade"  role="dialog">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+
+    <!-- Modal content-->
+    <div class="modal-content  text-center">
+      <div class="modal-header text-center bg-warning">
+	  <h4 class="modal-title">OTP Verification</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>One Time Password is been sent to your E-Mail Address : <span class="text-danger" id="otpemail"><strong></strong></span></p>
+     <form class="form-inline" action="">
+  <label for="otp" class="mr-sm-2 "><strong>Enter OTP :</strong></label>
+  <input type="text" class="form-control mb-2 mr-sm-2" id="otp">
+  <button type="button" class="btn btn-success mb-2 tooltip-test" id="submitotp" title="Necessary for Your Authentification">Verify</button>
+				</form>
+	 </div>
+      <div class="modal-footer bg-light">
+	 
+  <strong> Didn't recieved OTP..? </strong>&nbsp;&nbsp;<button type="button" class="btn btn-primary btn-sm tooltip-test" title="Try ResendingOTP in case of delay" id="resend" value="Resend OTP"></button>
+	
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end of otp modal-->
+
+        <div id="sss">
+            
+        </div>		
+
+
+	<!-- Edited login form-->
+		
+		    <div class="modal fade" id="AlreadyUserModal">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header bg-light">
+	                        <img id="homelogo" style="height:44px; " src="images/logo.jpg">
+                            <div class="text-center text-info lead"> <h4 class="modal-title">&nbsp;&nbsp;Login</h4></div>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body ">
+                            <form action="">
+                            <div class="form-group">
+                                <label  class="text-danger"><strong>User-Type</strong></label>
+                                 <select class="form-control" id="usertypelog">
+                                        
+                                        <option>Faculty</option>
+			                <option>Student</option>
+	                            </select>
+                            </div>          
+	                       
+                                    
+                                    
+                                    <div class="form-group">
+                                        <label class="text-danger" for="username"><strong>Username:</strong></label>
+                                        <input type="username" class="form-control" placeholder="Enter Username" id="usernamelog" aria-describedby="help" required>
+                                        <small class="text-muted" id="help">**Incase of Student Enter Your Roll Number&nbsp;&nbsp;&nbsp;&nbsp;Otherwise Enter email address</small>
+                                    </div>
+                                <div class="form-group">
+                                    <label class="text-danger" for="pwd"><strong>Password:</strong></label>
+                                    <input type="password" class="form-control" placeholder="Enter Password" id="pwdlog" required>
+                                    <small class="text-muted" id="help">**Password Field is Case Sensitive.</small>
+                                </div>
+                                <div class="text-center text-success"><button type="button" class="btn btn-success text-light" onclick="validate()" id="loginbtn"> Login </button>&nbsp;&nbsp;
+      &nbsp;
+      </div>
+                              
+      <a href="ForgetPassword.html" class="text-dark text-center">Forget Password...?</a><br>
+      <a href="Registration.html" class="text-danger text-center">New User? Register Here</a>   
+    </form>
+	
+        </div>
+    </div>
+  </div>
+</div>
+	<!-- end of login form-->
+	
+	<!-- invalid user message modal-->
+	
+	<div class="modal fade" id="InvalidUserModal">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-light">
+	  <img id="homelogo" style="height:44px; " src="images/logo.jpg">
+       <div class="text-center text-info lead"> <h4 class="modal-title">&nbsp;&nbsp;Registration Failed</h4></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+      <!-- Modal body -->
+      <div class="modal-body ">
+	  
+	  <div class="jumbotron">Sorry..!!, You are not a Member OF Department Of Computer Science And Engineering, UIT-RGPV, Bhopal. </div>
+	  <hr>
+	  <div class="jumbotron">Still want to register..?, 
+			<a href="Contact Us.html" class="btn btn-primary" > Ask Administrator</a>
+	  </div>
+	  </div>
+ 	<br>
+	</div>
+    </div>
+  </div>
+	
+	<!-- end of invalid user message modal -->
+	</div>
+        <!--start of registered Model-->
+        	<div class="modal fade" id="Registered">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-light">
+	  <img id="homelogo" style="height:44px; " src="images/logo.jpg">
+       <div class="text-center text-info lead"> <h4 class="modal-title">&nbsp;&nbsp;Already Registered</h4></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+      <!-- Modal body -->
+      <div class="modal-body ">
+	  
+	  <div class="jumbotron">You are already a Member OF Department Of Computer Science And Engineering, UIT-RGPV, Bhopal. </div>
+	  <hr>
+	  <div class="jumbotron text-center">Please, Try to Register 
+              <button type="button" class="btn btn-primary mb-2 btn-lg" data-toggle="modal" data-dismiss="modal" data-target="#AlreadyUserModal">LOGIN</button>
+	  </div>
+	  </div>
+ 	<br>
+	</div>
+    </div>
+  </div>
+	
+        <!--end of registered modal-->
+         <!--start of confirmation modal-->
+            <div class="modal fade" id="confirm">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-light">
+	  <img id="homelogo" style="height:44px; " src="images/logo.jpg">
+       <div class="text-center text-info lead"> <h4 class="modal-title text-success ">&nbsp;&nbsp;<strong>Registered Successfully</strong></h4></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+      <!-- Modal body -->
+      <div class="modal-body ">
+	  
+          <div class="jumbotron"><h6>You are Successfully Registerd  To Department Of Computer Science And Engineering, UIT-RGPV, Bhopal.</h6> </div>
+	  <hr>
+	  <div class="jumbotron text-center">Please, Try to Login&nbsp;&nbsp;<br> 
+              <button type="button" class="btn btn-primary mb-2 btn-lg" data-toggle="modal" data-dismiss="modal" data-target="#AlreadyUserModal">LOGIN</button>
+	  </div>
+	  </div>
+ 	<br>
+	</div>
+    </div>
+  </div>
+        <!--end of confirmation modal-->
+	<!--start of spinner-->
+        	<div class="modal fade" id="spinneremailwait">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-light">
+	  <img id="homelogo" style="height:44px; " src="images/logo.jpg">
+       <div class="text-center text-info lead"> <h4 class="modal-title">&nbsp;&nbsp;Please Wait</h4></div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+      <!-- Modal body -->
+      <div class="modal-body ">
+	  
+	  <div>Sending OTP to Your Email Address </div>
+          <br>
+          <div class="d-flex justify-content-center">
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+           </div>
+	  </div>
+ 	<br>
+	</div>
+    </div>
+  </div>
+        
+        <!--end o spinner-->
+	<hr>
+		<footer>
+                <div class="jumbotron bg-dark text-light text-center mt-4">
+                    <h3><strong>&copy; COPY-RIGHT, UIT-RGPV</strong></h3>
+                    <hr class="dark w-50 bg-light">
+                    <p class="lead text-muted">ALL RIGHTS ARE RESERVED</p>
+                </div>
+        </footer>
+
+           
+		<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+    <script src="js/Registration.js" type="text/javascript"></script>
+    <script src="js/validate.js" type="text/javascript"></script>
+		</body>
+</html>
